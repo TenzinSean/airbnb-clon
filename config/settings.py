@@ -24,9 +24,9 @@ print(os.path.join(BASE_DIR, "uploads"))
 SECRET_KEY = 'w_5bie#m$v#ehkcv7y6nyclmnldgy&j5#%jjfis$wcie60woov'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = "*"
 
 
 # Application definition
