@@ -66,7 +66,7 @@ class SearchView(View):
                 filter_args["country"] = country
 
                 if room_type is not None:
-                    filter_args["room_type__pk"] = room_type
+                    filter_args["room_type"] = room_type
 
                 if price is not None:
                     filter_args["price__lte"] = price
@@ -83,7 +83,7 @@ class SearchView(View):
                 if baths is not None:
                     filter_args["baths__gte"] = baths
 
-                if instant is True:
+                if instant_book is True:
                     filter_args["instant_book"] = True
 
                 if superhost is True:
@@ -97,17 +97,15 @@ class SearchView(View):
                 for facitly in facilities:
                     filter_args["facilities"] = facitly
                         
-                qs = models.Room.objects.filter(**filter_args)
+                qs = models.Room.objects.filter(**filter_args).order_by("-created")
 
                 paginator = Paginator(qs,10,orphans=5)
 
                 page = request.GET.get("page", 1)
 
-                roooms = paginator.get_page(page)
+                rooms = paginator.get_page(page)
                 return render(request, "rooms/search.html", {"form": form, "rooms": rooms})
-
         else:
-
             form = forms.SearchForm()
             return render(request, "rooms/search.html", {"form": form})
 
