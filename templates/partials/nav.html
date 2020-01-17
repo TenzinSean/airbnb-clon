@@ -1,5 +1,6 @@
     <ul class="flex item-center text-sm font-medium h-full">
         {% if user.is_authenticated %}
+            <li class="nav_link"><a href="{{ user.get_absolute_url }}">Profile</a></li>
             <li class="nav_link ml-8 border-b-2 border-white h-full flex items-center"><a href="{% url "users:logout" %}">Log out</a></li>
         {% else %}
             <li class="nav_link ml-8 border-b-2 border-white h-full flex items-center hover:border-gray-600"><a class="py-10 px-5" href="{% url "users:login" %}">Log in </a></li>
