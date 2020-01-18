@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-18 23:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: templates/base.html:24
+msgid "Search by city"
+msgstr "Cherche le place"
+
+#: templates/partials/footer.html:5
+msgid "Please don't copy us"
+msgstr "SVP pas copie notre site"
+
+#: templates/rooms/room_list.html:25
+#, fuzzy, python-format
+#| msgid ""
+#| "                        Page %(current_page)s of "
+#| "%(total_pages)                    "
+msgid ""
+"\n"
+"                        Page %(current_page)s of %(total_pages)s\n"
+"                    "
+msgstr "La Page %(current_page)s de %(total_pages)"
+
+#: users/models.py:69
+msgid "Verify Airbnb Account"
+msgstr "Verif Airbnb compte"

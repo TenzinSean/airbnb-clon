@@ -1,5 +1,6 @@
 import uuid
 from django.conf import settings
+from django.utils.translation import gettext_lazy as _
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.core.mail import send_mail
@@ -18,9 +19,9 @@ class User(AbstractUser):
     GENDER_OTHER = "other"
 
     GENDER_CHOICES = (
-        (GENDER_MALE, "Male"),
-        (GENDER_FEMALE, "Female"),
-        (GENDER_OTHER, "Other"),
+        (GENDER_MALE, _("Male")),
+        (GENDER_FEMALE, _("Female")),
+        (GENDER_OTHER, _("Other")),
     )
 
 
@@ -28,8 +29,8 @@ class User(AbstractUser):
     LANGUAGE_TIBETAN = "tb"
 
     LANGUAGE_CHOICES = (
-        (LANGUAGE_ENGLISH, "English"),
-        (LANGUAGE_TIBETAN, "Tibetan"),
+        (LANGUAGE_ENGLISH, _("English")),
+        (LANGUAGE_TIBETAN, _("Tibetan")),
     )
 
 
@@ -45,10 +46,17 @@ class User(AbstractUser):
     LOGIN_CHOICES = ((LOGIN_EMAIL, "Email"), (LOGIN_GITHUB, "GitHub"), (LOGIN_KAKAO, "Kakao"))
 
     avatar = models.ImageField(upload_to="avatars", blank=True)
-    gender = models.CharField(choices=GENDER_CHOICES, max_length=10,blank=True)
-    bio = models.TextField(default="", blank=True)
+    gender = models.CharField(
+        _("gender"), choices=GENDER_CHOICES, max_length=10, blank=True
+    )
+    bio = models.TextField(_("bio"), blank=True)
     birthdate = models.DateField(null=True, blank=True)
-    langauge = models.CharField(choices=LANGUAGE_CHOICES, max_length=2,blank=True,default=LANGUAGE_TIBETAN)
+    langauge = models.CharField(
+        _("language"),
+        choices=LANGUAGE_CHOICES,
+        max_length=2,
+        blank=True,
+        default=LANGUAGE_TIBETAN,)
     currency = models.CharField(choices=CURRENCY_CHOICES, max_length=3, blank=True,default=CURRENCY_KRW)
     superhost = models.BooleanField(default=False)
     email_confirmed = models.BooleanField(default=False)
