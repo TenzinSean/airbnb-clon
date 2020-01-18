@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-18 23:51+0100\n"
+"POT-Creation-Date: 2020-01-18 23:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,38 @@ msgid ""
 "                    "
 msgstr "La Page %(current_page)s de %(total_pages)"
 
-#: users/models.py:69
+#: users/models.py:22
+msgid "Male"
+msgstr "Masculaine"
+
+#: users/models.py:23
+msgid "Female"
+msgstr "Feminae"
+
+#: users/models.py:24
+msgid "Other"
+msgstr "Autre"
+
+#: users/models.py:32
+msgid "English"
+msgstr "Anglais"
+
+#: users/models.py:33
+msgid "Tibetan"
+msgstr "Tibetain"
+
+#: users/models.py:50
+msgid "gender"
+msgstr "sex"
+
+#: users/models.py:52
+msgid "bio"
+msgstr "bio"
+
+#: users/models.py:55
+msgid "language"
+msgstr "lang"
+
+#: users/models.py:77
 msgid "Verify Airbnb Account"
 msgstr "Verif Airbnb compte"
