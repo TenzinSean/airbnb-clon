@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-18 23:57+0100\n"
+"POT-Creation-Date: 2020-01-19 11:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,38 @@ msgstr "Cherche le place"
 #: templates/partials/footer.html:5
 msgid "Please don't copy us"
 msgstr "SVP pas copie notre site"
+
+#: templates/partials/nav.html:6
+msgid "Stop hosting"
+msgstr ""
+
+#: templates/partials/nav.html:8
+msgid "Start hosting"
+msgstr ""
+
+#: templates/partials/nav.html:13
+msgid "Create Room"
+msgstr ""
+
+#: templates/partials/nav.html:15
+msgid "Profile"
+msgstr ""
+
+#: templates/partials/nav.html:16
+msgid "Log out"
+msgstr ""
+
+#: templates/partials/nav.html:18
+msgid "Log in"
+msgstr ""
+
+#: templates/partials/nav.html:19
+msgid "Sign up"
+msgstr ""
+
+#: templates/rooms/room_detail.html:30
+msgid "Save to Favourites"
+msgstr ""
 
 #: templates/rooms/room_list.html:25
 #, fuzzy, python-format
