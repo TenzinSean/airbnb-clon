@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 flake8 = "*"
 black = "*"
+awsebcli = "*"
 
 [packages]
 django = "==2.2.5"
@@ -20,3 +21,5 @@ python_version = "3.7"
 
 [pipenv]
 allow_prereleases = true
+
+
