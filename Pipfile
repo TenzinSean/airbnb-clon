@@ -15,11 +15,10 @@ django-countries = "*"
 django-seed = "*"
 django-dotenv = "*"
 requests = "*"
+pathspec = "==0.5.9"
 
 [requires]
 python_version = "3.7"
 
 [pipenv]
 allow_prereleases = true
-
-
